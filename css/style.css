@@ -1,0 +1,301 @@
+/* 
+    colors
+
+    headerone #df473a
+    headergradient background: rgb(248,102,89);
+background: linear-gradient(90deg, rgba(248,102,89,1) 0%, rgba(234,86,72,1) 50%, rgba(220,70,56,1) 100%);
+    headertwo #fff8ce
+    textone #852a25
+    texttwo #999e03
+    textthree #f43308
+    mainone #f5eedc
+    maintwo #f9f5ea
+    footerone #66635e
+    footertwo #5c5954
+    footerthree #413e39
+
+    font
+
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Titillium Web', sans-serif;
+*/
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+    font-size: 32px;
+    color: red;
+}
+  ========================================== */
+
+:root {
+    --headerone: #df473a;
+    --headertwo: #fff8ce;
+    --textone: #852a25;
+    --texttwo: #999e03;
+    --textthree: #f43308;
+    --textfour: #b5b2ad;
+    --mainone: #f5eedc;
+    --maintwo: #f9f5ea;
+    --footerone: #66635e;
+    --footertwo: #5c5954;
+    --footerthree: #413e39;
+    --primFont: 'Titillium Web', sans-serif;
+    --secFont: 'Dancing Script', cursive;
+}
+
+/* 
+    header
+*/
+
+.nav-top {
+    margin: 2px 0;
+    padding: 0;
+}
+
+.top-header {
+    background-color: var(--headerone);
+}
+
+.top-nav {
+    margin: 0 0 4px 4px;
+    padding: 0;
+    color: var(--headertwo);
+}
+
+.mid-header {
+    background: rgb(248,102,89);
+    background: linear-gradient(180deg, rgba(248,102,89,1) 0%, rgba(234,86,72,1) 50%, rgba(220,70,56,1) 100%);
+}
+
+h1 {
+    margin: 10px 0 20px 0;
+    padding: 0;
+    font-family: var(--primFont);
+}
+
+.mid-nav {
+    margin: 0 0 0 60px;
+    padding: 0;
+    color: var(--headertwo);
+    font-family: var(--primFont);
+}
+
+.drop-down-menu {
+    background-color: white;
+    border: solid 1px lightgray;
+    border-left: none;
+}
+
+.bottom-header {
+    background-color: var(--headertwo);
+}
+
+.bottom-header p {
+    margin: 20px 0;
+    padding: 0;
+    color: var(--textone);
+    font-family: var(--primFont);
+}
+
+.search-bar {
+    margin: 10px 0;
+    border: solid 1px var(--textone);
+}
+
+.search {
+    border: none;
+    background-color: var(--headertwo);
+}
+
+.icon-search {
+    margin: 0;
+    padding: 0;
+    color: var(--textone);
+}
+
+/* 
+    main
+*/
+
+.top-main {
+    background-color: url(../media/soup2.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.top-main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.carousel-content {
+    /* position: relative;
+    bottom: 350px;
+    left: 500px; */
+    z-index: 1;
+    color: white;
+}
+
+.mid-main {
+    padding-bottom: 60px;
+    background-color: var(--mainone);
+}
+
+.main-img {
+    margin-top: 60px;
+}
+
+.label {
+    padding: 6px 0;
+    background-color: white;
+}
+
+.mid-main h3 {
+    margin: 0 24px;
+    padding: 0;
+    color: var(--textthree);
+    font-size: medium;
+    font-family: var(--primFont);
+}
+
+.main-mid-text {
+    margin: 0 24px;
+    padding: 0;
+    color: var(--textone);
+    font-size: x-small;
+    font-family: var(--primFont);
+}
+
+.about {
+    margin: 60px 0;
+    padding: 20px;
+    padding-bottom: 90px;
+    background-color: white;
+}
+
+.about-head {
+    color: var(--textthree);
+}
+
+.about-text {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    font-size: small;
+}
+
+.bottom-main {
+    background-color: var(--maintwo);
+}
+
+.bottom-main h2 {
+    margin: 30px 0;
+    color: var(--textone);
+    font-family: var(--primFont);
+}
+
+.main-icon {
+    font-size: 40px;
+}
+
+.bottom-main h3 {
+    font-size: x-small;
+    font-family: var(--primFont);
+}
+
+.bottom-main h4 {
+    font-size: larger;
+    font-weight: bolder;
+    font-family: var(--primFont);
+}
+
+.bottom-main-head {
+    color: var(--texttwo);
+}
+
+.main-btn {
+    color: var(--textthree);
+    margin-bottom: 30px;
+    font-family: var(--primFont);
+}
+
+
+/* 
+    footer
+*/
+
+.top-footer {
+    padding: 14px 0;
+    background-color: var(--footerone);
+}
+
+.top-footer h4 {
+    font-family: var(--secFont);
+    color: var(--textfour);
+}
+
+.logo {
+    border-right: solid 1px var(--textfour);
+}
+
+.mid-footer {
+    padding: 20px 0;
+    background-color: var(--footertwo);
+    font-family: var(--primFont);
+    border-top: solid 2px #57544f;
+}
+
+.mid-footer p {
+    margin: 0;
+    padding: 0;
+}
+
+.mid-footer h4 {
+    padding-bottom: 16px;
+    font-size: 16px;
+}
+
+.mid-footer p {
+    color: var(--textfour);
+    font-size: 14px;
+}
+
+.mid-footer a {
+    font-size: 14px;
+}
+
+.mid-footer .btn {
+    font-size: 14px;
+}
+
+.mid-footer h5 {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.bottom-footer {
+    padding: 20px 0;
+    background-color: var(--footerthree);
+    font-family: var(--primFont);
+}
+
+.bottom-footer h2, .colophon {
+    margin: 0;
+    padding: 0;
+}
